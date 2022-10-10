@@ -8,7 +8,7 @@ from pydub import AudioSegment
 from scipy import signal	#FFTに使用
 
 #pyファイル読み込み
-import read_wave
+import helper.read_wave as read_wave
 import helper.make_data as make_data
 import helper.fft_ as fft_
 import helper.write_data_csv as write_data_csv
