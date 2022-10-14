@@ -25,7 +25,7 @@ def splitdata_convert(dirPath):
   files = glob.glob(dirPath+"/*")
   data_array = np.empty((0,2048), int)
   for filename in files:
-    #waveファイルの読み込み
+    #waveファイルの読み込み-
     data, rate = sf.read(filename)
     data_array = np.append(data_array, np.array([data]), axis=0)
   
